@@ -1,0 +1,67 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+
+// box shadow mixin
+@mixin box-shadow($boxShadow) {
+-webkit-box-shadow: $boxShadow;
+    -moz-box-shadow: $boxShadow;
+        box-shadow: $boxShadow;
+}
+// border radius mixin
+@mixin border-radius($radius) {
+-webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+        border-radius: $radius;
+}
+// transition mixin
+@mixin transition($time) {
+-webkit-transition: (all $time ease-in-out);
+    -moz-transition: (all $time ease-in-out);
+    -ms-transition: (all $time ease-in-out);
+        -o-transition: (all $time ease-in-out);
+        transition: (all $time ease-in-out);
+}
+
+// input appearance mixin
+@mixin appearance {
+-webkit-appearance: none;
+    -moz-appearance: none;
+            appearance: none;
+}
+// UL,OL Default style remove
+@mixin listStyle($mb: 0) {
+    list-style: none;
+    padding-left: 0;
+    margin: $mb;
+}
+@mixin fontAwesome(){
+    font-family: 'fontAwesome';
+} 
+// Set Font size & color
+@mixin font($size, $color) {
+    font-size: $size;
+    color: $color;
+}
+// Set Open Sans Pro font family & weight
+@mixin openSans($weight) {
+    @if $weight == 300 {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: $weight;
+    } @else if $weight == 400 {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: $weight;
+    } @else if $weight == 600 {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: $weight;
+    } @else if $weight == 700 {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: $weight;
+    } @else if $weight == 800 {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: $weight;
+    } @else {
+        @error "Unknown font family #{$weight}.";
+    }
+}

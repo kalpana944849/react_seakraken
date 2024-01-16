@@ -1,0 +1,52 @@
+@import "../../stylesheets/main";
+
+.home {
+    background-color: #efeded;
+    padding: 30px;
+
+    .content {
+        max-width: 60%;
+        margin: 0 auto;
+        padding: 210px 0;
+
+        @include lg{
+            max-width: 100%;
+            padding: 289px 0;
+        }
+        &_text {
+            h1 {
+                font-size: 55px;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                text-align: center;
+                color: #111;
+                font-weight: 800;
+
+                @include lg{
+                    font-size: 53.76px;
+                }
+
+                @include sm{
+                    font-size: 22px;
+                }
+            }
+        }
+
+        &_info {
+            p {
+                font-size: 22px;
+                text-align: center;
+                margin-bottom: 20px;
+
+                @include lg{
+                    font-size: 19.712px;
+                }
+            }
+        }
+
+        &_button {
+            margin-top: 30px;
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,46 @@
+@import './stylesheets/main';
+
+.wrapper {
+    position: relative;
+    padding-left: 0;
+    @include transition(.3s);
+    &.show {
+        padding-left: 294px;
+        @include lg {
+            padding-left: 0;
+        }
+    }
+    .content {
+      flex: 1;
+      padding: 0 15px;
+    }
+}
+
+.loaderDiv{
+    width: 100%;
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rdt_Pagination {
+    .sc-ikZqro,
+    .sc-llJbZy {
+        display: none;
+    }
+  }
+
+  .apexcharts-legend{
+    text-align: left;
+  }
+
+
+  .captureMessage{
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    .span{
+     color:$color-blue
+    }
+  }

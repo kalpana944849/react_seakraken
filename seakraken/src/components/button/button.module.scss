@@ -1,0 +1,18 @@
+@import "../../stylesheets/main";
+
+.button{
+    button{
+    background: #7843e9;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    font-weight: 700;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px 0 rgba(0,0,0,.15);
+    transition: transform .3s;
+    padding: 20px 80px;
+    border:none;
+    font-size: 19px;
+    }
+}

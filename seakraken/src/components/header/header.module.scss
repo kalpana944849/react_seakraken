@@ -1,0 +1,134 @@
+@import "../../stylesheets/main";
+
+.header {
+    background-color: white;
+    padding: 0px 0px;
+    position: absolute;
+    width: 100%;
+
+    .content {
+
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+        padding: 14px;
+
+        @include lg {
+            padding: 10px;
+        }
+
+        &_info {
+            display: flex;
+            // flex: 0 0 65%;
+            align-items: center;
+            cursor: pointer;
+
+            .logo {
+                img {
+                    height: 60px;
+                    width: 80px;
+
+                }
+            }
+
+            .text {
+                margin-left: 20px;
+                color: #333333;
+                font-size: 18px;
+                text-transform: uppercase;
+                font-weight: 700;
+                letter-spacing: 1px;
+            }
+        }
+
+
+        &_list {
+            display: flex;
+            list-style: none;
+            // flex: 0 0 35%;
+            margin-left: auto;
+            justify-content: space-between;
+            max-width: 550px;
+            width: 100%;
+
+            @include lg {
+                max-width: 400px;
+            }
+
+            @include sm {
+                position: fixed;
+                top: 80px;
+                left: 0;
+                width: 100%;
+                display: none;
+                text-align: right;
+            }
+
+            li {
+
+                display: inline-block;
+                font-size: 16px;
+                color: #333;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                font-weight: 700;
+                transition: color .3s;
+                cursor: pointer;
+
+                @include sm {
+                    margin: 40px 0;
+                }
+
+                a{
+                    text-decoration: none;
+                }
+            }
+
+            li:hover {
+                color: #7843e9;
+                transition: color .3s;
+
+            }
+        }
+
+        &_icons {
+            display: none;
+            @include sm{
+                display: block;
+            }
+                
+                img {
+                    width: 26.88px;
+                    height: 26.88px;
+                }
+        }
+
+      
+    }
+
+    .menu {
+        display: none;
+        visibility: hidden;
+
+        ul {
+            li {
+                list-style: none;
+                text-align: right;
+                margin-bottom: 10px;
+                padding: 0px 0px 10px;
+            }
+        }
+    }
+    .menushow{
+        display: block !important;
+    width: 100%;
+    top: 100%;
+    visibility: visible;
+    position: relative;
+    z-index: 1111111;
+    transition: all .3s;
+    }
+
+
+}

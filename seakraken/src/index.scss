@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css");
+@import './stylesheets/main';
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #FAFAFA;
+  margin: 0;
+  @include openSans(400);
+  @include font(16px, $base-text-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  /* font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace; */
+  @include openSans(400);
+}
+
+img {
+  max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0 0 15px;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  max-width: $container-width;
+}
+
+.wrapper {
+  width: 100%;
+}
