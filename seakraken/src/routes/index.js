@@ -12,14 +12,10 @@ const Routes = () => {
     return (
         <>
             <Header />
-            <BrowserRouter>
-                <Route exact path="/home" element={<Home />} />
-                <Route exact path="/contact" element={<Contact />} />
-                <Route exact path="/projects" element={<Projects />} />
-                <Route exact path="/contact" element={<Contact />} />
-                <Route exact path="/about" element={<About />} />
-
-            </BrowserRouter>
+            <Home/>
+            <About/>
+            <Projects/>
+            <Contact/>
             <Footer />
         </>
         // <>
